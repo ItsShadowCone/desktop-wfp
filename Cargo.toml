@@ -1,0 +1,22 @@
+[package]
+name = "wfp"
+version = "0.1.0"
+authors = ["Cl1608Ho <cl1608ho@gmail.com>"]
+
+[lib]
+name = "pam_wfp"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "wfp"
+
+[dependencies]
+reqwest = "0.8.8"
+base64 = "0.9.3"
+json = "0.11.13"
+openssl = { version = "0.10" }
+
+qrcode = { version = "0.8.0", default-features = false }
+
+eventsource = { path = "eventsource" }
+pam = { path = "pam" }
